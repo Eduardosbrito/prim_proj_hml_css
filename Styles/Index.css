@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+   --CorBlack: #000000;
+   --CorBranco: #f6f6f6;
+   --CorAzul: #22d4fd;
+   --Hover: #272727;
+
+   --FontePrincipal: 'Krona One', sans-serif;
+   --fonteSegundaria: 'Montserrat', sans-serif
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   box-sizing: border-box;
+   background-color: var(--CorBlack);
+   color: var(--CorBranco);
+}
+
+.Cabecalho{
+   padding: 2% 0 0 11%;
+}
+
+.Cabecalho__Menu{
+display: flex;
+gap: 80px
+}
+
+.Cabecalho__Menu__link{
+   font-size: 1.5rem;
+   font-family: var(--fonteSegundaria);
+   font-weight: 400;
+   color: var(--CorAzul);
+   text-decoration: none;
+}
+
+.EmpresaDestaque {
+   color: var(--CorAzul);
+}
+
+.Apresentacao{
+   padding: 6% 11%;
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   gap: 3px;
+}
+
+.Apresentacao__Conteudo{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.Apresentacao__Conteudo__Titulo{
+   font-size: 2.81rem;
+   font-family: var(--FontePrincipal);
+}
+
+.Apresentacao__Conteudo__Texto{
+   font-size: 1.5rem;
+   font-family: var(--fonteSegundaria);
+}
+
+.Apresentacao__Conteudo__Titulo__About{
+   font-size: 2.56rem;
+   font-family: var(--FontePrincipal);
+}
+
+.Apresentacao__Conteudo__Texto__About{
+   font-size: 0.87rem;
+   font-family: var(--fonteSegundaria);
+}
+
+.Apresentacao__Links{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;  
+}
+
+.Apresentacao__Links__SubTitulo{
+   font-size: 1.56rem;
+   font-weight: 400;
+   font-family: var(--FontePrincipal);
+}
+
+.Apresentacao__Link{
+   border:  2px solid var(--CorAzul);
+   width: 80%;
+   text-align: center;
+   border-radius: 8px;
+   font-size: 1.5rem;
+   font-weight: 600;
+   padding: 10px 0;
+   text-decoration: none;
+   color: var(--CorBranco);
+   font-family: var(--fonteSegundaria);
+   display: flex; 
+   justify-content: center;
+   gap: 10px;
+}
+
+.Apresentacao__Link:hover{
+   background-color: var(--Hover);
+}
+
+.Apresentacao__Imagem{
+   width: 50%;
+}
+
+.Rodape{
+   padding: 24px;
+   color: var(--CorBlack);
+   background-color: var(--CorAzul);
+   text-align: center;
+   font-size: 1.25rem;
+   font-family: var(--fonteSegundaria);
+   font-weight: 400;
+}
+
+@media(max-width: 1200px){
+   .Cabecalho{
+      padding: 5%;
+   }
+
+   .Cabecalho__Menu{
+      justify-content: center;
+   }
+
+   .Apresentacao{
+      flex-direction: column-reverse;
+      padding: 3%;
+   }
+
+   .Apresentacao__Conteudo{
+      width: auto;
+   }
+}
